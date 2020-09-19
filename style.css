@@ -66,6 +66,7 @@ p {
   margin: 15px 0;
   padding: 20px 15px;
   max-width: 425px;
+  min-width: 280px;
   position: relative;
   text-align: center;
 }
@@ -146,8 +147,11 @@ h4 {
   }
   .left {
     padding-right: 1.5rem;
+    text-align: center;
   }
-
+  .right{
+    padding-left: 1.5rem;
+  }
   .rating {
     position: static;
   }
@@ -167,21 +171,37 @@ h4 {
     margin-top: 100px;
     text-align: center;
   }
-  .right {
-    margin-top: 50px;
-  }
+
   .intro {
     display: block;
   }
   .left,
   .right {
     width: 100%;
+    padding: 0;
   }
-
+  .right {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rating{
+    width: 100%;
+    max-width: 100%;
+  
+  }
+  .clients-reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .client-card {
     width: 100%;
     position: static;
+    padding: 0 15px;
   }
+  
 }
 
 /* for mobile */
@@ -203,14 +223,12 @@ h4 {
 
   .left,
   .right {
-    padding: 0 15px;
+    padding: 0;
   }
   .rating {
     font-size: 0.8rem;
     line-height: 1.5;
   }
 
-  .client-card {
-    margin: 25px 15px !important;
-  }
+  
 }
